@@ -49,7 +49,7 @@
             <!-- Masthead Avatar Image-->
             <img class="masthead-avatar mb-5" src="assets/img/picture.png" alt="..." />
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Dr Guillaume Charbonnier</h1>
+            <h1 class="masthead-heading mb-0">Dr Guillaume Charbonnier</h1>
             <h2 class="masthead-heading mb-0">Freelance Bioinformatician</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
@@ -113,9 +113,9 @@
                         <div class="keyword-category">
                             <button class="btn btn-outline-primary btn-sm portfolio-tag active"
                                 data-keyword="Transcriptomics">Transcriptomics</button>
-                            <button class="btn btn-outline-primary btn-sm portfolio-tag"
+                            <button class="btn btn-outline-primary btn-sm portfolio-tag active"
                                 data-keyword="Genomics">Genomics</button>
-                            <button class="btn btn-outline-primary btn-sm portfolio-tag"
+                            <button class="btn btn-outline-primary btn-sm portfolio-tag active"
                                 data-keyword="Epigenomics">Epigenomics</button>
                             <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="Proteomics">Proteomics</button>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
                         <div class="keyword-category">
-                            <button class="btn btn-outline-primary btn-sm portfolio-tag active"
+                            <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="Illumina">Illumina</button>
                             <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="Nanopore">Nanopore</button>
@@ -147,9 +147,9 @@
                                 data-keyword="WGS">WGS</button>
                             <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="WES">WES</button>
-                            <button class="btn btn-outline-primary btn-sm portfolio-tag active"
+                            <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="RNA-Seq">RNA-Seq</button>
-                            <button class="btn btn-outline-primary btn-sm portfolio-tag active"
+                            <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="scRNA-Seq">scRNA-Seq</button>
                             <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="ChIP-Seq">ChIP-Seq</button>
@@ -171,7 +171,7 @@
                     </div>
                     <div class="tab-pane fade" id="analysis" role="tabpanel" aria-labelledby="analysis-tab">
                         <div class="keyword-category">
-                            <button class="btn btn-outline-primary btn-sm portfolio-tag active"
+                            <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="Differential Expression">Differential Expression</button>
                             <button class="btn btn-outline-primary btn-sm portfolio-tag"
                                 data-keyword="Functional Enrichment">Functional Enrichment</button>
@@ -265,7 +265,7 @@
                     </div>
                     <img class="img-fluid" src="assets/img/portfolio/chromatin_states.png"
                         alt="Chromatin State Analysis" />
-                    <p class="keywords">Chromatin States, ChIP-Seq, HMM, Epigenetics</p>
+                    <p class="keywords">Chromatin States, ChIP-Seq, HMM, Epigenomics</p>
                 </div>
             </div>
             <!-- Portfolio Item 3-->
@@ -277,7 +277,7 @@
                     </div>
                     <img class="img-fluid" src="assets/img/portfolio/integration.png"
                         alt="Multi-omics Data Integration" />
-                    <p class="keywords">Data Integration, Multi-omics, Visualization, R</p>
+                    <p class="keywords">Data Integration, Epigenomics, Visualization, R</p>
                 </div>
             </div>
             <!-- Portfolio Item 4-->
@@ -289,7 +289,7 @@
                     </div>
                     <img class="img-fluid" src="assets/img/portfolio/differential_expression.png"
                         alt="Differential Expression Analysis" />
-                    <p class="keywords">Differential Expression, RNA-Seq, DESeq2</p>
+                    <p class="keywords">Transcriptomics, Differential Expression, RNA-Seq, DESeq2</p>
                 </div>
             </div>
             <!-- Portfolio Item 5 -->
@@ -301,7 +301,7 @@
                     </div>
                     <img class="img-fluid" src="assets/img/portfolio/gene_ontology_enrichment_analysis.png"
                         alt="Gene Ontology Enrichment Analysis" />
-                    <p class="keywords">Gene Ontology, Functional Enrichment, GO</p>
+                    <p class="keywords">Transcriptomics, Gene Ontology, Functional Enrichment, GO</p>
                 </div>
             </div>
             <!-- Portfolio Item 6-->
@@ -313,7 +313,7 @@
                         </div>
                     </div>
                     <img class="img-fluid" src="assets/img/portfolio/snv_indel_detection.png" alt="SNV and Indel Detection">
-                    <p class="keywords">SNV, Indel, Variant Calling, Genomics</p>
+                    <p class="keywords">Genomics, SNV, Indel, Variant Calling, Genomics</p>
                 </div>
             </div>
         </div>
@@ -596,6 +596,77 @@
             </div>
         </div>
     </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Enrichment analysis</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gene_ontology_enrichment_analysis.png" alt="Project 5 Image" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Gene ontology and pathway enrichment analyses from extracted gene lists or distal cis-regulatory regions.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">SNV and Indel detection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/snv_indel_detection.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Single nucleotide variant and indel detection using a broad range of state-of-the-art
+                                    algorithms.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
