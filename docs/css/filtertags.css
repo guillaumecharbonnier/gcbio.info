@@ -1,0 +1,32 @@
+    /* Add to css/freelancer.min.css or your custom CSS file */
+
+    .keyword-category h5 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        color: #2c3e50; /* Adjust heading color */
+    }
+
+    .keyword-category button {
+        margin: 3px;
+    }
+
+    .keyword-categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribute categories evenly */
+    }
+
+    .keyword-category {
+        /* width: 31%; Adjust width to fit 3 categories side by side */
+        margin: 10px;
+        text-align: center;
+    }
+    .keyword-category h5 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        color: #2c3e50; /* Adjust heading color */
+    }
+
+    .keyword-category button {
+        margin: 3px;
+    }
