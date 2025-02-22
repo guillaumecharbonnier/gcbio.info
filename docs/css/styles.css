@@ -11027,6 +11027,45 @@ html {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
+.portfolio-modal ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.portfolio-modal ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.portfolio-modal ul li::before {
+  content: "\2022";
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em; /* Adjusted for better alignment */
+}
+
+.portfolio-modal ul ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px; /* Added padding for nested lists */
+}
+
+.portfolio-modal ul ul li::before {
+  content: "\2013";
+  color: #6c757d;
+  font-weight: normal;
+  margin-left: -1.5em; /* Adjusted for better alignment */
+}
+
+.portfolio-modal p {
+  text-align: justify;
+}
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
