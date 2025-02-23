@@ -30,3 +30,23 @@
     .keyword-category button {
         margin: 3px;
     }
+
+    .keywords {
+        font-size: 0.8rem; /* Adjust the font size as needed */
+        color: #ffffff; /* Change the color to white */
+        margin-top: 0.5rem; /* Add some space above the keywords */
+        text-align: center; /* Center align the keywords */
+        line-height: 1.5; /* Add line height to increase vertical spacing */
+    }
+
+    .keywords span {
+        display: inline-block;
+        margin: 0.1rem; /* Reduce space between keywords */
+        padding: 0.1rem 0.3rem; /* Increase lateral padding to increase background color space */
+        background-color: #1abc9c; /* Add a background color */
+        border-radius: 0.2rem; /* Increase rounded corners */
+    }
+    .keywords .hidden {
+        display: none;
+    }
+    

@@ -43,15 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
             var keywordsEl = item.querySelector(".keywords");
             if (!keywordsEl) return; // Skip if not found
 
-            var keywords = keywordsEl.textContent.toLowerCase().split(", ");
+            var keywords = Array.from(keywordsEl.querySelectorAll("span")).map(function(span) {
+                return span.textContent.toLowerCase();
+            });
             var showItem = false;
 
-            // if (filterMode === 'single') {
-            //     // Show if exactly one keyword is selected and it is present
-            //     if (selectedKeywords.length === 1 && keywords.includes(selectedKeywords[0])) {
-            //         showItem = true;
-            //     }
-            // } else 
             if (filterMode === 'union') {
                 // Show if no keywords are selected, or any key is present
                 if (selectedKeywords.length === 0) {
