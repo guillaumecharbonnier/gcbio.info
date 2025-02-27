@@ -1,0 +1,24 @@
+div.portfolio-modal.modal.fade(id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal4Label Differential Expression Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/differential_expression.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 RNA-Seq differential expression analysis is a powerful tool for researchers seeking to understand gene activity changes across different biological conditions. This sophisticated method allows for the identification of genes that are significantly up- or down-regulated between experimental groups, providing crucial insights into cellular processes, disease mechanisms, and treatment responses. By leveraging advanced statistical techniques and robust bioinformatics pipelines, this analysis transforms raw sequencing data into actionable biological knowledge. Whether you're investigating a novel drug's effect on gene expression, exploring developmental stages in an organism, or unraveling the complexities of a disease state, a well-executed RNA-Seq differential expression analysis can reveal key molecular players and potential therapeutic targets. This service offers a comprehensive approach, from initial quality control of sequencing data to the final delivery of clear, interpretable results, ensuring that researchers can make informed decisions and advance their scientific inquiries with confidence.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

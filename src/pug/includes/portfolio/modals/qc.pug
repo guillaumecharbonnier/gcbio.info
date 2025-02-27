@@ -1,0 +1,50 @@
+// Portfolio Modal 1
+div.portfolio-modal.modal.fade(id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal1Label Quality Control using MultiQC
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/qc.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 As a seasoned bioinformatician with over a decade of experience, I provide comprehensive quality control (QC) services to ensure the reliability and accuracy of your NGS data analysis. My approach involves systematically evaluating and validating your sequencing data at every critical checkpoint. I employ a multi-tiered QC process that includes:
+              ul
+                li
+                  strong Raw Data Assessment:
+                  ul
+                    li Per-base sequence quality analysis
+                    li GC content distribution evaluation
+                    li Overrepresented sequence detection
+                    li Adapter content quantification
+                li
+                  strong Alignment Quality Control:
+                  ul
+                    li Mapping rate optimization
+                    li Insert size distribution analysis
+                    li Coverage uniformity assessment
+                    li Duplicate read quantification
+                li
+                  strong Post-Processing QC:
+                  ul
+                    li Variant calling accuracy verification
+                    li Base quality score recalibration
+                    li Read depth distribution analysis
+                    li Strand bias detection
+              p.mb-4 I utilize industry-standard tools like FastQC, Picard, and GATK integrated with custom scripts to generate comprehensive QC metrics. My pipeline culminates in the production of an interactive MultiQC report, offering you a centralized dashboard for efficient data quality evaluation.
+              p.mb-4 This systematic approach enables early detection of anomalies, facilitates informed decision-making in your analysis workflow, and ensures your data meets rigorous quality standards for downstream applications.
+              p.mb-4 By partnering with me for your QC needs, you'll gain peace of mind knowing that your data is thoroughly vetted by an experienced professional who understands the importance of precision in bioinformatics research.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

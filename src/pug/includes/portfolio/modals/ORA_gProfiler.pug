@@ -1,0 +1,32 @@
+// Portfolio Modal 5
+div.portfolio-modal.modal.fade(id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal5Label Over-Representation Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/ORA_gProfiler.png" alt="Project 5 Image")
+              // Portfolio Modal - Text
+              p.mb-4.
+                Over-Representation Analysis (ORA) is a powerful tool in the bioinformatician's arsenal for interpreting high-throughput omics data. This method examines whether specific gene sets or biological functions are statistically overrepresented in a subset of "interesting" genes compared to what would be expected by chance. ORA helps researchers uncover meaningful biological insights from large-scale experiments, such as gene expression microarrays or proteomics studies, by identifying enriched functional categories within gene lists. By leveraging databases like Gene Ontology (GO) or MSigDB, ORA can reveal underlying biological processes, molecular functions, or cellular components that are particularly relevant to the experimental conditions being studied. This approach is especially valuable for researchers seeking to translate raw data into actionable hypotheses, guiding further experimental design or highlighting potential therapeutic targets. With its ability to distill complex datasets into functionally relevant information, ORA serves as a critical bridge between raw experimental results and meaningful biological interpretation. ORA are usually applied through prefilled queries to webservices like 
+                #[a(href="https://maayanlab.cloud/Enrichr/" target="_blank" rel="noopener noreferrer") Enrichr], 
+                and 
+                #[a(href="https://biit.cs.ut.ee/gprofiler/" target="_blank" rel="noopener noreferrer") g:Profiler], 
+                but could also be computed locally if needed using eg 
+                #[a(href="https://www.bioconductor.org/packages/release/bioc/html/clusterProfiler.html" target="_blank" rel="noopener noreferrer") clusterProfiler].
+              a.btn.btn-success(href="https://gcbio.info/investigator/public/rnaseq/example_with_functional_enrichment/#ORA" target="_blank" rel="noopener noreferrer") View Demo Report Example
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

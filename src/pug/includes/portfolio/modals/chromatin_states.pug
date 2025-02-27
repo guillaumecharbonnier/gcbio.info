@@ -1,0 +1,27 @@
+// Portfolio Modal 2
+div.portfolio-modal.modal.fade(id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal2Label Chromatin State Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/chromatin_states.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Chromatin segmentation analysis is a powerful tool for understanding the functional organization of the genome. This advanced bioinformatics service utilizes histone modification ChIP-seq data to identify distinct chromatin states across the genome, providing crucial insights into gene regulation and genomic function. By employing robust computational methods, the genome is segmented into regions with similar histone mark patterns, revealing key functional elements such as active promoters, enhancers, repressed regions, and transcriptionally active gene bodies.
+              p.mb-4 The integration of multiple histone modifications creates a comprehensive map of chromatin states, offering a nuanced view of the regulatory landscape. This valuable analysis is particularly beneficial for researchers studying epigenetic mechanisms, gene expression patterns, or seeking to annotate functional elements in their genomic data. Whether applied to basic research or applied genomics, chromatin segmentation analysis can provide essential insights to guide projects forward and unlock new understanding of genome function.
+              p.mb-4 For researchers and organizations seeking to leverage this powerful approach, expert bioinformatics support is available to design, execute, and interpret chromatin segmentation analyses tailored to specific research questions and datasets.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

@@ -1,0 +1,25 @@
+// Portfolio Modal 6
+div.portfolio-modal.modal.fade(id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal6Label SNV and Indel detection
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/snv_indel_detection.png" alt="")
+              // Portfolio Modal - Text
+              p.mb-4 Variant calling analysis is a crucial step in understanding genetic diversity and identifying mutations that may impact health, disease, or traits. This powerful bioinformatics approach sifts through sequencing data to pinpoint differences in DNA sequences compared to a reference genome. By employing sophisticated algorithms and statistical methods, variant calling can detect single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variations. This process is essential for a wide range of applications, including personalized medicine, crop improvement, and evolutionary studies. Variant calling services ensure accurate identification and annotation of genetic variants, providing researchers and clinicians with valuable insights to drive their projects forward. Whether you're working with human genomes, plant breeding populations, or microbial communities, variant calling analysis can reveal the genetic basis of phenotypic variation and help guide critical decisions in research and clinical settings.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

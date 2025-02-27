@@ -1,0 +1,36 @@
+.keyword-category {
+  h5 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #2c3e50; // Adjust heading color
+  }
+  button {
+    margin: 3px;
+  }
+}
+
+.keyword-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; // Distribute categories evenly
+}
+
+.keywords {
+  font-size: 0.8rem; // Adjust the font size if needed
+  color: #ffffff; // Change color to white
+  margin-top: 0.5rem; // Add space above
+  text-align: center; // Center align
+  line-height: 1.5; // Increase vertical spacing
+
+  span {
+    display: inline-block;
+    margin: 0.1rem; // Reduce space between keywords
+    padding: 0.1rem 0.3rem; // Increase lateral padding
+    background-color: #1abc9c; // Background color
+    border-radius: 0.2rem; // Rounded corners
+  }
+
+  .hidden {
+    display: none;
+  }
+}
