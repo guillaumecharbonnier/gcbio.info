@@ -1,0 +1,24 @@
+div.portfolio-modal.modal.fade(id="portfolioModalInteractome" tabindex="-1" aria-labelledby="portfolioModalInteractomeLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalInteractomeLabel Interactome Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/interactome.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Interactome analysis from RNA sequencing data has emerged as a powerful approach to elucidate the complex network of cellular communications within biological systems. This method leverages high-throughput transcriptomic data to infer potential ligand-receptor interactions between different cell types, providing insights into the intricate crosstalk that underlies various physiological and pathological processes. By integrating information on known ligand-receptor pairs with gene expression profiles, researchers can predict and quantify intercellular signaling events across diverse cell populations. This approach is particularly valuable for understanding the tumor microenvironment, immune responses, and developmental processes, where cell-cell communication plays a crucial role. The analysis typically involves identifying expressed ligands and receptors in distinct cell types, calculating the likelihood of their interactions, and assessing the statistical significance of these predicted communications. Advanced computational methods can further refine these predictions by considering the subunit architecture of protein complexes and incorporating spatial information when available. By revealing the molecular basis of cellular crosstalk, interactome analysis from RNA-seq data provides a comprehensive view of tissue function and offers potential targets for therapeutic interventions.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
