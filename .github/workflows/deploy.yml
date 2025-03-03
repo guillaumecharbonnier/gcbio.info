@@ -27,7 +27,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist  # or your build output directory
-uses: actions/upload-artifact@v4
   deploy:
     needs: build-and-deploy
     runs-on: ubuntu-latest
