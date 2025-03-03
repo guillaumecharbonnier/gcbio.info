@@ -1,0 +1,52 @@
+// Portfolio Item
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalSampleMislabeling")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/sample_mislabeling.png" alt="Sample mislabeling analysis")
+    p.keywords
+      span Quality Control
+      span Sample Mislabeling
+      span.hidden fastqc
+      span.hidden RNA-Seq
+      span.hidden ChIP-Seq
+      span.hidden ATAC-Seq
+      span.hidden WGS
+      span.hidden WES
+      span.hidden RNA-Seq
+      span.hidden scRNA-Seq
+      span.hidden CITE-Seq
+      span.hidden ChIP-Seq
+      span.hidden ATAC-Seq
+      span.hidden Hi-C
+      span.hidden Bisulfite-Seq
+      span.hidden RRBS
+      span.hidden EM-Seq
+      span.hidden MNase-Seq
+
+// Portfolio Modal
+div.portfolio-modal.modal.fade(id="portfolioModalSampleMislabeling" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalSampleMislabelingLabel Sample mislabeling analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/sample_mislabeling.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Sample mislabeling analysis is a critical bioinformatics service aimed at ensuring the integrity of high-throughput genomic datasets by identifying and resolving inconsistencies between genotype and sequence data. Utilizing advanced methods such as single nucleotide polymorphism (SNP) analysis, this service detects allelic mismatches that can arise from errors in sample handling or technical biases, such as cross-sample contamination or amplification artifacts. SNP analysis not only validates sample identity but also facilitates downstream applications like quantitative trait loci (QTL) mapping and genome-wide association studies (GWAS), where precision is paramount. Additionally, correlation analysis is employed to uncover relationships between biological variables across datasets, enabling the identification of batch effects or confounding factors. Techniques such as Pearson or canonical correlation analysis are applied to quantify associations, ensuring robust integration of multi-omics data for accurate biological interpretation. Together, these analyses provide a comprehensive framework for addressing sample mislabeling while enhancing data reliability and interpretability.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
