@@ -1,0 +1,35 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalHiC")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/items/HiC.png" alt="HiC Analysis")
+    p.keywords
+      span Epigenomics
+      span HiC
+      span Interactome
+
+div.portfolio-modal.modal.fade(id="portfolioModalHiC" tabindex="-1" aria-labelledby="portfolioModalHiCLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalHiCLabel HiC Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/HiC.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Hi-C (High-throughput Chromosome Conformation Capture) analysis is a powerful bioinformatics service that enables researchers to map genome-wide chromatin interactions and elucidate the three-dimensional organization of chromosomes. This technique involves cross-linking chromatin, fragmenting DNA with restriction enzymes, ligating biotinylated ends, and sequencing the resulting DNA fragments. The bioinformatics pipeline for Hi-C data analysis typically includes quality assessment, alignment to reference genomes, filtering, bias correction, and construction of genome-wide interaction matrices. Advanced analysis can reveal important chromatin features such as topologically associating domains (TADs), A/B compartments, and long-range regulatory interactions. Hi-C data can be integrated with other genomic and epigenomic datasets, including RNA-Seq, ChIP-Seq, and ATAC-Seq, to provide comprehensive insights into gene regulation, epigenetic networks, and the mechanisms underlying biological traits. This sophisticated analytical approach offers researchers a powerful tool for investigating chromatin dynamics, genome organization, and their roles in various biological processes and disease states.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

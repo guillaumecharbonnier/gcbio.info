@@ -1,0 +1,36 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalNanoporeWGS")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/Nanopore_WGS.png" alt="Nanopore WGS Analysis")
+    p.keywords
+      span Genomics
+      span Epigenomics
+      span Nanopore
+      span Interactome
+
+div.portfolio-modal.modal.fade(id="portfolioModalNanoporeWGS" tabindex="-1" aria-labelledby="portfolioModalNanoporeWGSLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalNanoporeWGSLabel Nanopore WGS Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/Nanopore_WGS.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Long-read whole genome sequencing (WGS) using Oxford Nanopore Technologies offers a powerful approach for integrated genomic and epigenomic analysis. This technology enables the generation of ultra-long reads, often exceeding 10 kb in length, which facilitates improved resolution of complex genomic regions and structural variants. A key advantage of nanopore sequencing is its ability to directly detect DNA modifications, including 5-methylcytosine (5mC), without the need for bisulfite conversion. This capability allows for simultaneous sequencing and methylation analysis, providing a comprehensive view of both the genetic and epigenetic landscape. Bioinformatics services for nanopore long-read WGS typically involve sophisticated algorithms for base-calling, read alignment, and methylation detection. Tools such as Nanopolish, Megalodon, and DeepSignal have demonstrated high performance in accurately calling CpG methylation at single-molecule, single-base resolution. These analytical pipelines can process the ionic current signals generated during nanopore sequencing to infer both DNA sequence and methylation status, enabling the creation of high-resolution methylome maps alongside genomic data. The integration of sequence and methylation information from long reads allows for the analysis of methylation patterns across extended genomic regions, including those with low CpG density, which are challenging to assess with short-read technologies.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
