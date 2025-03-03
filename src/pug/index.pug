@@ -1,4 +1,7 @@
 doctype html
+mixin portfolioButton(keyword)
+    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword=keyword) #{keyword}
+
 html(lang='en')
     head
         meta(charset='utf-8')
@@ -73,77 +76,34 @@ html(lang='en')
                                 a.nav-link#analysis-tab(data-bs-toggle='tab' href='#analysis' role='tab' aria-controls='analysis' aria-selected='false') Analysis
                             li.nav-item
                                 a.nav-link#tool-tab(data-bs-toggle='tab' href='#tool' role='tab' aria-controls='tool' aria-selected='false') Tool
-                            li.nav-item
-                                a.nav-link#application-tab(data-bs-toggle='tab' href='#application' role='tab' aria-controls='application' aria-selected='false') Application
-                            li.nav-item
-                                a.nav-link#organism-tab(data-bs-toggle='tab' href='#organism' role='tab' aria-controls='organism' aria-selected='false') Organism
+                            //- li.nav-item
+                            //-     a.nav-link#application-tab(data-bs-toggle='tab' href='#application' role='tab' aria-controls='application' aria-selected='false') Application
+                            //- li.nav-item
+                            //-     a.nav-link#organism-tab(data-bs-toggle='tab' href='#organism' role='tab' aria-controls='organism' aria-selected='false') Organism
                         .tab-content#filterTabsContent
                             .tab-pane.fade.show.active#discipline(role='tabpanel' aria-labelledby='discipline-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag.active(data-keyword='Transcriptomics') Transcriptomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag.active(data-keyword='Genomics') Genomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag.active(data-keyword='Epigenomics') Epigenomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Proteomics') Proteomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Metabolomics') Metabolomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Metagenomics') Metagenomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Cheminformatics') Cheminformatics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Machine learning') Machine learning
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Software Development') Software Development
+                                    include includes/tags/discipline.pug
                             .tab-pane.fade#technology(role='tabpanel' aria-labelledby='technology-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Illumina') Illumina
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Nanopore') Nanopore
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='PacBio') PacBio
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Bionano') Bionano
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='MethylationEPIC') MethylationEPIC
+                                    include includes/tags/technology.pug
                             .tab-pane.fade#technique(role='tabpanel' aria-labelledby='technique-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='WGS') WGS
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='WES') WES
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='RNA-Seq') RNA-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='scRNA-Seq') scRNA-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='CITE-Seq') CITE-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='ChIP-Seq') ChIP-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='ATAC-Seq') ATAC-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Hi-C') Hi-C
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='WGBS') Bisulfite-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='RRBS') RRBS
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='EM-Seq') EM-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='MNase-Seq') MNase-Seq
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='OGM') OGM
+                                    include includes/tags/technique.pug
+                                p Techniques are not displayed in the item tags below if multiple techniques are involved to preserve space. However, you can use them to narrow down your search.
                             .tab-pane.fade#analysis(role='tabpanel' aria-labelledby='analysis-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Differential Expression') Differential Expression
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Functional Enrichment') Functional Enrichment
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Overlap Enrichment Analysis') Overlap Enrichment Analysis
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Variant Calling') Variant Calling
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Motif Enrichment') Motif Enrichment
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag.active(data-keyword='Quality Control') Quality Control
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Data Integration') Data Integration
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Visualization') Visualization
+                                    include includes/tags/analysis.pug
                             .tab-pane.fade#tool(role='tabpanel' aria-labelledby='tool-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='DESeq2') DESeq2
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Samtools') Samtools
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Bedtools') Bedtools
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='R') R
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Python') Python
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='IGV') IGV
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='g:Profiler') g:Profiler
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='MultiQC') MultiQC
+                                    include includes/tags/tool.pug
+                                p Tools are not displayed in the item tags below if multiple tools are involved to preserve space. However, you can use them to narrow down your search.
                             .tab-pane.fade#application(role='tabpanel' aria-labelledby='application-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Clinical Research') Clinical Research
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Environmental Studies') Environmental Studies
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Agricultural Genomics') Agricultural Genomics
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Cancer Research') Cancer Research
+                                    include includes/tags/application.pug
                             .tab-pane.fade#organism(role='tabpanel' aria-labelledby='organism-tab')
                                 .keyword-category
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Homo sapiens') Homo Sapiens
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Mus musculus') Mus Musculus
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Drosophila melanogaster') Drosophila melanogaster
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Saccharomyces cerevisiae') Saccharomyces cerevisiae
-                                    button.btn.btn-outline-primary.btn-sm.portfolio-tag(data-keyword='Non Model Organism') Non Model Organism
+                                    include includes/tags/organism.pug
                 // Filter Mode Buttons and Clear Filters
                 .row.justify-content-center.mb-3
                     .col-md-10.text-center
@@ -157,11 +117,11 @@ html(lang='en')
                     include includes/portfolio/integration.pug
                     include includes/portfolio/differential_expression.pug
                     include includes/portfolio/ORA_gProfiler.pug
+                    include includes/portfolio/GSEA.pug
                     include includes/portfolio/snv_indel_detection.pug
                     include includes/portfolio/interactome.pug
                     include includes/portfolio/HiC.pug
                     include includes/portfolio/Nanopore_WGS.pug
-                
                 // Always Displayed Message
                 .col-12.col-md-8.col-lg-7.mx-auto.text-center
                     p No projects found matching your criteria? This may mean I haven't yet worked on that specific area or haven't updated my portfolio with relevant examples. However, I offer custom analyses, so please don't hesitate to contact me to discuss your specific needs!

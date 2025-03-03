@@ -1,6 +1,6 @@
-// Portfolio Item 5
+// Portfolio Item
 .col-md-6.col-lg-4.portfolio-item
-  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModal5")
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalORA_gProfiler")
     .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
       .portfolio-item-caption-content.text-center.text-white
         i.fas.fa-plus.fa-3x
@@ -14,8 +14,8 @@
       span GO
       span.hidden g:Profiler
 
-// Portfolio Modal 5
-div.portfolio-modal.modal.fade(id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true")
+// Portfolio Modal
+div.portfolio-modal.modal.fade(id="portfolioModalORA_gProfiler" tabindex="-1" aria-labelledby="portfolioModalORA_gProfilerLabel" aria-hidden="true")
   .modal-dialog.modal-xl
     .modal-content
       .modal-header.border-0
@@ -25,7 +25,7 @@ div.portfolio-modal.modal.fade(id="portfolioModal5" tabindex="-1" aria-labelledb
           .row.justify-content-center
             .col-lg-8
               // Portfolio Modal - Title
-              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModal5Label Over-Representation Analysis
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalORA_gProfilerLabel Over-Representation Analysis
               // Icon Divider
               .divider-custom
                 .divider-custom-line
@@ -33,7 +33,7 @@ div.portfolio-modal.modal.fade(id="portfolioModal5" tabindex="-1" aria-labelledb
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/ORA_gProfiler.png" alt="Project 5 Image")
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/ORA_gProfiler.png" alt="ORA g:Profiler Image")
               // Portfolio Modal - Text
               p.mb-4.
                 Over-Representation Analysis (ORA) is a powerful tool in the bioinformatician's arsenal for interpreting high-throughput omics data. This method examines whether specific gene sets or biological functions are statistically overrepresented in a subset of "interesting" genes compared to what would be expected by chance. ORA helps researchers uncover meaningful biological insights from large-scale experiments, such as gene expression microarrays or proteomics studies, by identifying enriched functional categories within gene lists. By leveraging databases like Gene Ontology (GO) or MSigDB, ORA can reveal underlying biological processes, molecular functions, or cellular components that are particularly relevant to the experimental conditions being studied. This approach is especially valuable for researchers seeking to translate raw data into actionable hypotheses, guiding further experimental design or highlighting potential therapeutic targets. With its ability to distill complex datasets into functionally relevant information, ORA serves as a critical bridge between raw experimental results and meaningful biological interpretation. ORA are usually applied through prefilled queries to webservices like 

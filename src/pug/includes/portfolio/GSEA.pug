@@ -1,0 +1,44 @@
+// Portfolio Item
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalGSEA")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/items/GSEA.png" alt="GSEA")
+    p.keywords
+      span Transcriptomics
+      span RNA-Seq
+      span Functional Enrichment
+      span GSEA
+      span.hidden Gene Ontology
+      span.hidden GO
+      span.hidden g:Profiler
+
+// Portfolio Modal
+div.portfolio-modal.modal.fade(id="portfolioModalGSEA" tabindex="-1" aria-labelledby="portfolioModalGSEALabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalGSEALabel GSEA
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/GSEA.png" alt="ORA g:Profiler Image")
+              // Portfolio Modal - Text
+              p.mb-4.
+                Gene Set Enrichment Analysis (GSEA) is a powerful computational method used in bioinformatics to interpret large-scale genomic data, particularly gene expression profiles. This approach shifts the focus from individual genes to groups of genes that share common biological functions, pathways, or regulatory mechanisms. GSEA evaluates whether a predefined set of genes shows statistically significant, cumulative changes in expression that correlate with specific phenotypes or experimental conditions. By analyzing the collective behavior of gene sets rather than isolated genes, GSEA provides a more robust and biologically meaningful interpretation of complex genomic data. This method is particularly valuable in identifying subtle but coordinated changes in gene expression that may be missed by traditional single-gene analysis approaches. GSEA has found wide applications in various fields, including cancer research, drug discovery, and functional genomics, offering insights into underlying biological processes and potential therapeutic targets.
+                GSEA are usually applied locally using #[a(href="https://www.bioconductor.org/packages/release/bioc/html/clusterProfiler.html" target="_blank" rel="noopener noreferrer") clusterProfiler].
+              a.btn.btn-success(href="https://gcbio.info/investigator/public/rnaseq/example_with_functional_enrichment/#GSEA" target="_blank" rel="noopener noreferrer") View Demo Report Example
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
