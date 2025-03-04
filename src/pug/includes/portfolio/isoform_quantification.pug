@@ -1,0 +1,37 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalIsoformQuantification")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/isoform_quantification.png" alt="Isoform Quantification")
+    p.keywords
+      span Transcriptomics
+      span RNA-Seq
+      span Isoform Quantification
+      span.hidden Illumina
+      span.hidden Nanopore
+
+div.portfolio-modal.modal.fade(id="portfolioModalIsoformQuantification" tabindex="-1" aria-labelledby="portfolioModalIsoformQuantificationLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalIsoformQuantificationLabel Isoform Quantification
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/isoform_quantification.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Isoform quantification is a critical process in transcriptomics that aims to accurately measure the expression levels of different transcript variants originating from the same gene. This task is essential for understanding gene regulation, functional diversity, and cellular behavior at a more granular level than gene-level quantification. The process involves estimating the abundance of both annotated and novel isoforms, including those resulting from alternative splicing, alternative transcription start sites, or alternative polyadenylation. Quantification methods have evolved to accommodate different sequencing technologies, each with its own strengths and limitations. Short-read sequencing, such as Illumina, provides high depth but faces challenges in deconvoluting complex isoform structures due to limited read length. In contrast, long-read technologies like Oxford Nanopore offer full-length transcript sequencing, enabling better resolution of isoform diversity and facilitating the discovery of novel isoforms. However, long-read sequencing typically yields lower depth and higher error rates, necessitating specialized analytical approaches. Advanced computational methods, such as expectation-maximization algorithms and probabilistic frameworks, have been developed to address technology-specific biases and improve the accuracy of isoform quantification across platforms.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
