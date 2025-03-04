@@ -18,13 +18,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Clear filters button
-    document.getElementById("clearFilters").addEventListener("click", function() {
+    // Select all keywords button
+    document.getElementById("selectAllKeywords").addEventListener("click", function() {
+        selectAllKeywords();
+        filterPortfolioItems();
+    });
+
+    // Unselect all keywords button
+    document.getElementById("unselectAllKeywords").addEventListener("click", function() {
         document.querySelectorAll(".portfolio-tag").forEach(function(tag) {
             tag.classList.remove("active");
         });
         filterPortfolioItems();
     });
+
+    // Function to select all keywords
+    function selectAllKeywords() {
+        document.querySelectorAll(".portfolio-tag").forEach(function(tag) {
+            tag.classList.add("active");
+        });
+    }
 
     // Function to filter portfolio items
     function filterPortfolioItems() {
@@ -48,15 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
             });
             var showItem = false;
 
-            if (filterMode === 'union') {
-                // Show if no keywords are selected, or any key is present
-                if (selectedKeywords.length === 0) {
-                    showItem = true;
-                } else {
-                    showItem = selectedKeywords.some(function(kw) {
-                        return keywords.includes(kw);
-                    });
-                }
+            if (selectedKeywords.length === 0) {
+                // Hide all items if no keywords are selected
+                showItem = false;
+            } else if (filterMode === 'union') {
+                // Show if any selected keyword is present
+                showItem = selectedKeywords.some(function(kw) {
+                    return keywords.includes(kw);
+                });
             } else if (filterMode === 'intersection') {
                 // Show only if every selected keyword is present
                 showItem = selectedKeywords.every(function(kw) {
@@ -68,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Initialize default filter mode if needed. In this example, assume a mode is already active in the HTML.
+    // Initialize default filter mode and select all keywords
+    selectAllKeywords();
     filterPortfolioItems();
 });
