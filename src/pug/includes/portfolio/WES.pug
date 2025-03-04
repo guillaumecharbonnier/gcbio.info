@@ -1,0 +1,48 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalWES")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="WES Analysis")
+    p.keywords
+      span Genomics
+      span WES
+      span Illumina
+      span.hidden Short Reads
+
+div.portfolio-modal.modal.fade(id="portfolioModalWES" tabindex="-1" aria-labelledby="portfolioModalWESLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalWESLabel WES Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Whole Exome Sequencing (WES) using Illumina short reads is a targeted approach for sequencing the protein-coding regions of the genome. This technique involves capturing exonic regions, sequencing the captured DNA, and analyzing the sequences to identify genetic variants. WES provides detailed information on coding variants, including single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants.
+              p.mb-4 Bioinformatics services I can provide from WES data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping short reads to a reference genome.
+                li Variant calling: Identifying SNPs, insertions, deletions, and structural variants.
+                li Annotation: Annotating genetic variants with functional information.
+                li Comparative genomics: Comparing exomes across different samples or species.
+                li Population genomics: Analyzing genetic diversity and population structure.
+                li Phylogenetic analysis: Constructing phylogenetic trees to study evolutionary relationships.
+                li Integration with other omics data: Combining WES data with transcriptomics, proteomics, or epigenomics data for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of exomic data and variants.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

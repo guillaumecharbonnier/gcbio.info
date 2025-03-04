@@ -1,0 +1,46 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalWGBS")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="WGBS Analysis")
+    p.keywords
+      span Epigenomics
+      span WGBS
+      span Bisulfite Sequencing
+      span.hidden Illumina
+
+div.portfolio-modal.modal.fade(id="portfolioModalWGBS" tabindex="-1" aria-labelledby="portfolioModalWGBSLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalWGBSLabel WGBS Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Whole Genome Bisulfite Sequencing (WGBS) using Illumina short reads is a comprehensive method for analyzing DNA methylation across the entire genome at single-base resolution. This technique involves treating DNA with bisulfite to convert unmethylated cytosines to uracil, sequencing the treated DNA, and mapping the sequences to a reference genome.
+              p.mb-4 Bioinformatics services I can provide from WGBS data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping bisulfite-treated reads to a reference genome.
+                li Methylation calling: Identifying methylated cytosines and quantifying methylation levels.
+                li Differential methylation analysis: Comparing methylation patterns between conditions.
+                li Functional annotation: Annotating differentially methylated regions with genomic features and performing pathway enrichment analyses.
+                li Integration with other omics data: Combining WGBS data with other types of data (e.g., RNA-Seq, ChIP-Seq) for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of methylation data and results.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

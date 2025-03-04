@@ -1,0 +1,49 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalRNASeq")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="RNA-Seq Analysis")
+    p.keywords
+      span Transcriptomics
+      span RNA-Seq
+      span Illumina
+      span.hidden Short Reads
+
+div.portfolio-modal.modal.fade(id="portfolioModalRNASeq" tabindex="-1" aria-labelledby="portfolioModalRNASeqLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalRNASeqLabel RNA-Seq Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 RNA sequencing (RNA-Seq) using Illumina short reads is a powerful technique for analyzing the transcriptome, providing insights into gene expression, alternative splicing, and transcript isoforms. This method involves converting RNA to cDNA, sequencing the cDNA fragments, and mapping the sequences to a reference genome or transcriptome.
+              p.mb-4 Bioinformatics services I can provide from RNA-Seq data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping short reads to a reference genome or transcriptome.
+                li Transcript assembly: Reconstructing transcripts from aligned reads.
+                li Quantification: Measuring gene and transcript expression levels.
+                li Differential expression analysis: Identifying genes and transcripts with significant changes in expression between conditions.
+                li Alternative splicing analysis: Detecting and quantifying alternative splicing events.
+                li Functional annotation: Annotating genes and transcripts with functional information.
+                li Pathway analysis: Identifying enriched pathways and biological processes.
+                li Integration with other omics data: Combining RNA-Seq data with other types of data (e.g., proteomics, epigenomics) for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of transcriptomic data and results.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

@@ -1,0 +1,47 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalScRNASeq")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="scRNA-Seq Analysis")
+    p.keywords
+      span Transcriptomics
+      span scRNA-Seq
+      span Illumina
+      span.hidden Single Cell
+
+div.portfolio-modal.modal.fade(id="portfolioModalScRNASeq" tabindex="-1" aria-labelledby="portfolioModalScRNASeqLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalScRNASeqLabel scRNA-Seq Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Single-cell RNA sequencing (scRNA-Seq) using Illumina short reads is a powerful technique for analyzing the transcriptome at the single-cell level, providing insights into cellular heterogeneity, gene expression, and cell type identification. This method involves isolating individual cells, converting RNA to cDNA, sequencing the cDNA fragments, and mapping the sequences to a reference genome or transcriptome.
+              p.mb-4 Bioinformatics services I can provide from scRNA-Seq data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping short reads to a reference genome or transcriptome.
+                li Cell clustering: Grouping cells based on their gene expression profiles.
+                li Differential expression analysis: Identifying genes with significant changes in expression between cell clusters or conditions.
+                li Cell type identification: Annotating cell clusters with known cell types based on marker genes.
+                li Trajectory analysis: Inferring developmental lineages and cell state transitions.
+                li Integration with other omics data: Combining scRNA-Seq data with other types of data (e.g., proteomics, epigenomics) for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of single-cell data and results.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

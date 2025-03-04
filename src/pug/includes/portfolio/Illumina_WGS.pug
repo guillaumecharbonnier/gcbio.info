@@ -1,0 +1,48 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalWGS")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="WGS Analysis")
+    p.keywords
+      span Genomics
+      span WGS
+      span Illumina
+      span.hidden Short Reads
+
+div.portfolio-modal.modal.fade(id="portfolioModalWGS" tabindex="-1" aria-labelledby="portfolioModalWGSLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalWGSLabel WGS Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Whole Genome Sequencing (WGS) using Illumina short reads is a comprehensive method for analyzing the entire genome at high resolution. This technique involves fragmenting the DNA, sequencing the fragments, and assembling the sequences to reconstruct the genome. WGS provides detailed information on genetic variations, including single nucleotide polymorphisms (SNPs), insertions, deletions, and structural variants.
+              p.mb-4 Bioinformatics services I can provide from WGS data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Genome assembly: Assembling short reads into contiguous sequences (contigs) and scaffolds.
+                li Variant calling: Identifying SNPs, insertions, deletions, and structural variants.
+                li Annotation: Annotating genetic variants with functional information.
+                li Comparative genomics: Comparing genomes across different samples or species.
+                li Population genomics: Analyzing genetic diversity and population structure.
+                li Phylogenetic analysis: Constructing phylogenetic trees to study evolutionary relationships.
+                li Integration with other omics data: Combining WGS data with transcriptomics, proteomics, or epigenomics data for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of genomic data and variants.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

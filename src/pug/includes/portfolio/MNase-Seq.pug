@@ -1,0 +1,46 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalMNaseSeq")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="MNase-Seq Analysis")
+    p.keywords
+      span Epigenomics
+      span MNase-Seq
+      span Chromatin Accessibility
+      span.hidden Illumina
+
+div.portfolio-modal.modal.fade(id="portfolioModalMNaseSeq" tabindex="-1" aria-labelledby="portfolioModalMNaseSeqLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalMNaseSeqLabel MNase-Seq Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Micrococcal Nuclease Sequencing (MNase-Seq) using Illumina short reads is a powerful technique for analyzing chromatin accessibility and nucleosome positioning across the genome. This method involves digesting chromatin with micrococcal nuclease, sequencing the resulting DNA fragments, and mapping the sequences to a reference genome.
+              p.mb-4 Bioinformatics services I can provide from MNase-Seq data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping short reads to a reference genome.
+                li Nucleosome positioning: Identifying nucleosome-bound regions of the genome.
+                li Differential accessibility analysis: Comparing chromatin accessibility patterns between conditions.
+                li Functional annotation: Annotating nucleosome-bound regions with genomic features and performing pathway enrichment analyses.
+                li Integration with other omics data: Combining MNase-Seq data with other types of data (e.g., RNA-Seq, ChIP-Seq) for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of MNase-Seq data and results.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

@@ -1,0 +1,47 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalChIPSeqTF")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="ChIP-Seq TF Analysis")
+    p.keywords
+      span Epigenomics
+      span ChIP-Seq
+      span Transcription Factors
+      span.hidden Illumina
+
+div.portfolio-modal.modal.fade(id="portfolioModalChIPSeqTF" tabindex="-1" aria-labelledby="portfolioModalChIPSeqTFLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalChIPSeqTFLabel ChIP-Seq TF Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Chromatin Immunoprecipitation Sequencing (ChIP-Seq) for Transcription Factors using Illumina short reads is a powerful technique for analyzing protein-DNA interactions and identifying transcription factor binding sites across the genome. This method involves immunoprecipitating DNA-protein complexes, sequencing the DNA fragments, and mapping the sequences to a reference genome.
+              p.mb-4 Bioinformatics services I can provide from ChIP-Seq data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping short reads to a reference genome.
+                li Peak calling: Identifying regions of the genome enriched with transcription factor binding sites.
+                li Differential binding analysis: Comparing transcription factor binding patterns between conditions.
+                li Motif analysis: Identifying DNA motifs recognized by transcription factors.
+                li Functional annotation: Annotating peaks with genomic features and performing pathway enrichment analyses.
+                li Integration with other omics data: Combining ChIP-Seq data with other types of data (e.g., RNA-Seq, ATAC-Seq) for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of ChIP-Seq data and results.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
