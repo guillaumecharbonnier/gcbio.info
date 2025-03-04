@@ -1,0 +1,46 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalBionano")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/Bionano.png" alt="Bionano Analysis")
+    p.keywords
+      span Genomics
+      span Bionano
+
+div.portfolio-modal.modal.fade(id="portfolioModalBionano" tabindex="-1" aria-labelledby="portfolioModalBionanoLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalBionanoLabel Bionano Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/Bionano.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Bionano optical genome mapping (OGM) is a high-resolution molecular technique that enables the visualization and analysis of large-scale genomic structures. This method utilizes ultra-high molecular weight DNA molecules labeled at specific sequence motifs, which are then linearized and imaged through nanochannel arrays. The resulting optical maps provide long-range genomic information, allowing for the detection of structural variants (SVs) such as deletions, insertions, inversions, and translocations, as well as copy number variations (CNVs). OGM offers advantages over traditional sequencing-based methods, particularly in resolving complex genomic regions and repetitive sequences that are challenging for short-read technologies.
+              p.mb-4 Bioinformatics services I can provide from Bionano OGM data include:
+              ul
+                li De novo genome assembly and scaffolding
+                li Structural variant detection and analysis
+                li Copy number variation identification
+                li Genome-wide SV profiling and annotation
+                li Integration of OGM data with sequencing data for hybrid assemblies
+                li Comparative genomic analysis across multiple samples
+                li Custom pipeline development for specific research questions
+                li Quality control and data preprocessing of OGM raw data
+                li Visualization of genomic structures and SVs
+                li Statistical analysis of structural genomic features
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
