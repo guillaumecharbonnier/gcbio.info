@@ -28,7 +28,30 @@ div.portfolio-modal.modal.fade(id="portfolioModalMethylationEPIC" tabindex="-1" 
                   i.fas.fa-star
                 .divider-custom-line
               // Portfolio Modal - Image
-              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/MethylationEPIC.png" alt="...")
+              // Portfolio Modal - Image Slider
+              .portfolio-modal-slider
+                .carousel.slide#carouselMethylationEPIC(data-bs-ride="carousel" data-bs-interval="5000")
+                  .carousel-inner
+                    .carousel-item.active
+                      img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/MethylationEPIC.png" alt="MethylationEPIC Image 1")
+                      .carousel-caption.d-none.d-md-block
+                      //- h5 MethylationEPIC Image 1
+                      p Description for MethylationEPIC Image 1
+                    //- .carousel-item.active
+                    //-   img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/MethylationEPIC.png" alt="MethylationEPIC Image 1")
+                    //-   .carousel-caption.d-none.d-md-block
+                    //-     h5 MethylationEPIC Image 1
+                    //-     p Description for MethylationEPIC Image 1
+                    .carousel-item
+                      img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/GSEA.png" alt="MethylationEPIC Image 2")
+                    .carousel-item
+                      img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/HiC.png" alt="MethylationEPIC Image 3")
+                  a.carousel-control-prev(href="#carouselMethylationEPIC" role="button" data-bs-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.visually-hidden Previous
+                  a.carousel-control-next(href="#carouselMethylationEPIC" role="button" data-bs-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.visually-hidden Next
               // Portfolio Modal - Text
               p.mb-4 The Infinium MethylationEPIC BeadChip is a high-throughput DNA methylation profiling platform that enables comprehensive genome-wide analysis of methylation patterns at single-nucleotide resolution. It interrogates over 850,000 methylation sites per sample, covering CpG islands, genes, enhancers, and other regulatory regions.
               p.mb-4 Bioinformatics analyses of MethylationEPIC array data typically involve several key steps:

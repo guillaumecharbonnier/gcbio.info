@@ -37,3 +37,28 @@
     text-align: justify;
   }
   
+  // .carousel-caption {
+  //   background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  //   padding: 10px;
+  //   border-radius: 5px;
+  // }
+  // .carousel-item h5,
+  // .carousel-item p {
+  //   color: black; /* Set text color to black */
+  //   text-align: center; /* Center align the text */
+  //   margin-top: 10px; /* Add some margin to the top */
+  // }
+
+.carousel-item h5,
+.carousel-item p {
+  margin-top: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Invert colors to make the icons black */
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: black; /* Set indicators to black */
+}
