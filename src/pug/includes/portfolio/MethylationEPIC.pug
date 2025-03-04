@@ -1,0 +1,47 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalMethylationEPIC")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/items/MethylationEPIC.png" alt="MethylationEPIC Analysis")
+    p.keywords
+      span Epigenomics
+      span MethylationEPIC
+      span Supervised classification
+      span.hidden Cell Type Deconvolution
+
+div.portfolio-modal.modal.fade(id="portfolioModalMethylationEPIC" tabindex="-1" aria-labelledby="portfolioModalMethylationEPICLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalMethylationEPICLabel MethylationEPIC Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/modals/MethylationEPIC.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 The Infinium MethylationEPIC BeadChip is a high-throughput DNA methylation profiling platform that enables comprehensive genome-wide analysis of methylation patterns at single-nucleotide resolution. It interrogates over 850,000 methylation sites per sample, covering CpG islands, genes, enhancers, and other regulatory regions.
+              p.mb-4 Bioinformatics analyses of MethylationEPIC array data typically involve several key steps:
+              ul
+                li Data preprocessing: This includes quality control, filtering, normalization, and batch effect correction.
+                li Unsupervised classification: Clustering samples based on their methylation profiles to discover novel subgroups or patterns without prior knowledge of sample labels.
+                li Differential methylation analysis: Identifying differentially methylated positions (DMPs) and preset regions (DMRs) between sample groups.
+                li Functional analysis: Annotating methylation sites to genomic features and performing pathway enrichment analyses.
+                li Cell type deconvolution: Estimating the proportions of different cell types in a sample based on its methylation profile.
+                li Supervised classification: Using machine learning algorithms to classify samples based on their methylation profiles, which can help in identifying disease subtypes or predicting clinical outcomes.
+                li Feature selection: Identifying the most informative methylation sites for classification, enabling the design of biomarker panels for targeted methods such as MS-MLPA.
+                li Integration with other omics data: Combining methylation data with gene expression or other epigenetic marks for comprehensive epigenomic profiling.
+                li Copy number variation (CNV) analysis: Inferring CNVs from methylation array data using specialized tools like Conumee.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
