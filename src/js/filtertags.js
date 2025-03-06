@@ -83,4 +83,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initialize default filter mode and select all keywords
     selectAllKeywords();
     filterPortfolioItems();
+
+    // Modal transition handling
+    var originModal;
+
+    document.querySelectorAll('[data-bs-toggle="modal"]').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            var targetModal = document.querySelector(this.getAttribute('data-bs-target'));
+            originModal = document.querySelector(this.getAttribute('data-origin-modal'));
+
+            if (originModal) {
+                targetModal.addEventListener('hidden.bs.modal', function () {
+                    var modal = new bootstrap.Modal(originModal);
+                    modal.show();
+                }, { once: true });
+            }
+        });
+    });
 });
