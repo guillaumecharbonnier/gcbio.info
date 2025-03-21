@@ -80,8 +80,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Initialize default filter mode and select all keywords
-    selectAllKeywords();
+    // Initialize default filter mode and select specific keywords
+    document.querySelectorAll(".portfolio-tag").forEach(function(tag) {
+        if (tag.dataset.keyword === 'Transcriptomics' || tag.dataset.keyword === 'Publications') {
+            tag.classList.add("active");
+        } else {
+            tag.classList.remove("active");
+        }
+    });
     filterPortfolioItems();
 
     // Modal transition handling

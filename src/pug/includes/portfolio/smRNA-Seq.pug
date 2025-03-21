@@ -1,0 +1,59 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalsmRNASeq")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="smRNA-Seq Analysis")
+    p.keywords
+      span Transcriptomics
+      span smRNA-Seq
+      span Illumina
+      span.hidden Small RNA
+
+div.portfolio-modal.modal.fade(id="portfolioModalsmRNASeq" tabindex="-1" aria-labelledby="portfolioModalsmRNASeqLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalsmRNASeqLabel smRNA-Seq Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Small RNA sequencing (smRNA-Seq) using Illumina short reads is a powerful technique for analyzing the small RNA transcriptome, including microRNAs (miRNAs), small interfering RNAs (siRNAs), and piwi-interacting RNAs (piRNAs). This method involves isolating small RNA molecules, converting them to cDNA, sequencing the cDNA fragments, and mapping the sequences to a reference genome or transcriptome.
+              p.mb-4 Bioinformatics services I can provide from smRNA-Seq data include:
+              ul
+                li Data preprocessing: Quality control, filtering, and trimming of raw sequencing reads.
+                li Read alignment: Mapping small RNA reads to a reference genome or transcriptome.
+                li miRNA identification: Detecting known and novel miRNAs.
+                li siRNA and piRNA analysis: Identifying and characterizing siRNAs and piRNAs.
+                li Differential expression analysis: Identifying small RNAs with significant changes in expression between conditions.
+                li Target prediction: Predicting mRNA targets of small RNAs.
+                li Functional annotation: Annotating small RNAs with functional information.
+                li Pathway analysis: Identifying enriched pathways and biological processes.
+                li Integration with other omics data: Combining smRNA-Seq data with other types of data (e.g., mRNA-Seq, proteomics) for multi-omics analysis.
+                li Custom pipeline development: Developing tailored bioinformatics pipelines for specific research questions.
+                li Visualization: Creating visual representations of small RNA data and results.
+              p.mb-4 Related publication:
+              ul.list-unstyled
+                li.mb-3
+                  strong
+                    | Mokhtari A, Ibrahim EC, Gloaguen A, Barrot CC, Cohen D, Derouin M, Vachon H,
+                    a(href="https://orcid.org/0000-0001-5615-1287" target="_blank") Charbonnier G,
+                    | Loriod B, Decraene C, Yalcin I, Marie-Claire C, Etain B, Belzeaux R, Delahaye-Duriez A, Lutz PE.
+                  br
+                  | Using multiomic integration to improve blood biomarkers of major depressive disorder: a case-control study. EBioMedicine. 2025 Mar;113:105569.
+                  a(href="https://doi.org/10.1016/j.ebiom.2025.105569" target="_blank") doi: 10.1016/j.ebiom.2025.105569
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

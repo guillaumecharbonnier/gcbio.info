@@ -1,0 +1,47 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalTrajectory")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/trajectory.png" alt="Trajectory Analysis")
+    p.keywords
+      span scRNA-Seq
+      span Trajectory Analysis
+      span Pseudotime
+      span.hidden Cell Differentiation
+
+div.portfolio-modal.modal.fade(id="portfolioModalTrajectory" tabindex="-1" aria-labelledby="portfolioModalTrajectoryLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalTrajectoryLabel Trajectory Analysis
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/trajectory.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Trajectory analysis is a computational approach for studying cellular differentiation and dynamic biological processes through the lens of single-cell genomics data. This method organizes cells along developmental paths or "trajectories" based on their gene expression patterns, revealing the continuity of cellular states during processes like cell differentiation, immune response, or disease progression.
+              p.mb-4 My trajectory analysis services include:
+              ul
+                li Pseudotime inference: Ordering cells along progression trajectories to reconstruct developmental processes.
+                li Branching analysis: Identifying cellular decision points and bifurcations in developmental pathways.
+                li RNA velocity analysis: Predicting future cell states based on spliced and unspliced mRNA ratios.
+                li Gene dynamics modeling: Characterizing expression patterns of genes along cellular trajectories.
+                li Regulatory network inference: Reconstructing gene regulatory networks driving cell state transitions.
+                li Integration with perturbation data: Combining trajectory analysis with CRISPR or drug perturbation studies.
+                li Multi-omics trajectory analysis: Integrating RNA-seq with ATAC-seq or other data types for comprehensive analysis.
+                li Custom visualization: Creating intuitive visual representations of trajectory data and analytical results.
+                li Method benchmarking: Comparing multiple trajectory inference methods to identify the most appropriate for your data.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

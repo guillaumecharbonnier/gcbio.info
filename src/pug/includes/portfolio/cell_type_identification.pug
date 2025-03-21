@@ -1,0 +1,50 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalCellType")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/cell-type-identification.png" alt="Cell Type Identification")
+    p.keywords
+      span Transcriptomics
+      span scRNA-Seq  
+      span Cell Type Identification  
+      span.hidden Annotation
+      span.hidden Marker Genes
+      span Cell Atlas
+      span.hidden Cell Types
+
+div.portfolio-modal.modal.fade(id="portfolioModalCellType" tabindex="-1" aria-labelledby="portfolioModalCellTypeLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalCellTypeLabel Cell Type Identification
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/cell-type-identification.png" alt="...")
+              // Portfolio Modal - Text
+              p.mb-4 Cell type identification is a critical step in single-cell RNA sequencing analysis that involves assigning biological identities to clusters of cells based on their gene expression profiles. This process transforms abstract data points into meaningful biological entities, allowing researchers to characterize tissue composition, discover novel cell populations, and track cellular changes in development or disease.
+              p.mb-4 My cell type identification services include:
+              ul
+                li Marker-based annotation: Identifying cell types using established marker genes from literature and databases.
+                li Reference-based classification: Matching cells to reference atlases using supervised learning approaches.
+                li Automated annotation tools: Employing tools like SingleR, Garnett, or scANVI for systematic cell type assignment.
+                li Novel cell type discovery: Identifying and characterizing previously undescribed cell populations.
+                li Cell state discrimination: Distinguishing between different functional states within known cell types.
+                li Cross-species analysis: Transferring cell type annotations across different species or model organisms.
+                li Rare cell identification: Detecting and characterizing rare or underrepresented cell populations.
+                li Confidence assessment: Providing statistical confidence scores for cell type assignments.
+                li Custom reference building: Creating project-specific cell type references from your data.
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window

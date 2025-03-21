@@ -112,8 +112,10 @@ html(lang='en')
                         button.btn.btn-outline-secondary.btn-sm.filter-mode-button(data-mode='intersection') Intersection of Keywords
                         button.btn.btn-outline-secondary.btn-sm#selectAllKeywords Select All Keywords
                         button.btn.btn-outline-secondary.btn-sm#unselectAllKeywords Unselect All Keywords
+                //- p Use the filters above to find projects matching your criteria.
                 // Portfolio Grid Items
                 .row
+                    include includes/portfolio/publications.pug
                     include includes/portfolio/ATAC-Seq.pug
                     include includes/portfolio/Bionano.pug
                     include includes/portfolio/ChIP-Seq_histone_PTM.pug
@@ -136,6 +138,9 @@ html(lang='en')
                     include includes/portfolio/RNA-Seq.pug
                     include includes/portfolio/sample_mislabeling.pug
                     include includes/portfolio/scRNA-Seq.pug
+                    include includes/portfolio/cell_type_identification.pug
+                    include includes/portfolio/trajectory.pug
+                    include includes/portfolio/smRNA-Seq.pug
                     include includes/portfolio/snv_indel_detection.pug
                     include includes/portfolio/WES.pug
                     include includes/portfolio/WGBS.pug

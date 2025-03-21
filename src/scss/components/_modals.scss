@@ -13,7 +13,7 @@
   
   .portfolio-modal ul li::before {
     content: "\2022";
-    color: #007bff;
+    color: $primary;
     font-weight: bold;
     display: inline-block;
     width: 1em;
