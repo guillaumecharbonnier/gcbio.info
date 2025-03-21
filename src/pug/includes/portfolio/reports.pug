@@ -1,0 +1,45 @@
+.col-md-6.col-lg-4.portfolio-item
+  .mx-auto(data-bs-toggle="modal" data-bs-target="#portfolioModalReports")
+    .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+      .portfolio-item-caption-content.text-center.text-white
+        i.fas.fa-plus.fa-3x
+    img.img-fluid(src="assets/img/portfolio/gcbio.info.png" alt="Publications")
+    p.keywords
+      span Publications
+      span Anonymized reports
+
+div.portfolio-modal.modal.fade(id="portfolioModalReports" tabindex="-1" aria-labelledby="portfolioModalReportsLabel" aria-hidden="true")
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0#portfolioModalReportsLabel Demo Reports
+              // Icon Divider
+              .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                  i.fas.fa-star
+                .divider-custom-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src="assets/img/portfolio/gcbio.info.png" alt="Publications")
+              // Portfolio Modal - Text
+              p.mb-4 Below are some demo reports showcasing various analyses I can provide. These reports are anonymized to protect client confidentiality.
+              ul.list-unstyled
+                li.mb-3
+                  strong RNA-seq Analysis
+                  br
+                  a(href="https://gcbio.info/investigator/public/rnaseq/anon/" target="_blank") Anonymized RNA-seq Report
+                li.mb-3
+                  strong RNA-seq with Functional Enrichment
+                  br
+                  a(href="https://gcbio.info/investigator/public/rnaseq/example_with_functional_enrichment/" target="_blank") Example RNA-seq Report with Functional Enrichment
+                li.mb-3
+                  More demo reports coming soon!
+              button.btn.btn-primary(data-bs-dismiss="modal")
+                i.fas.fa-times.fa-fw
+                | Close Window
