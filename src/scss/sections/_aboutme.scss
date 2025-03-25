@@ -1,0 +1,52 @@
+// .aboutme {
+#aboutNav {
+    .nav-link {
+        color: $white; // Force text color for inactive tabs
+        // background-color: transparent; // Transparent background for inactive tabs
+        // // border: 1px solid $light; // Border for better visibility
+        // border-radius: $border-radius; // Rounded corners
+        // padding: 0.5rem 1rem; // Padding for better spacing
+        // transition: background-color 0.3s ease, color 0.3s ease;
+
+        // &:hover {
+        //     background-color: lighten($primary, 10%); // Slightly lighter background on hover
+        //     color: $white; // Text color on hover
+        // }
+
+        &.active {
+            // background-color: $secondary; // Background color for active tab
+            color: $secondary; // Text color for active tab
+            // border-color: $secondary; // Match border color with background
+        }
+    }
+}
+
+#aboutTabContent {
+    // background-color: $primary; // Background color for tab content
+    color: $white; // Text color for tab content
+    // padding: 1.5rem; // Padding inside the tab content
+    // border-radius: $border-radius; // Rounded corners for tab content
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for better separation
+
+    a {
+        // color: darken($secondary, 20%) !important; // Lighter color for links
+        color: $white;
+        text-decoration: underline; // Underline for better visibility
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $secondary; // Darker color on hover
+        }
+    }
+
+    ul {
+        list-style-type: disc; // Use disc bullets
+        padding-left: 1.5rem; // Add padding for bullets
+        color: $white; // Ensure bullets are visible on the background
+
+        li {
+            margin-bottom: 0.5rem; // Add spacing between list items
+            color: $white; // Ensure text is visible
+        }
+    }
+}

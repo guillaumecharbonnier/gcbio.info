@@ -23,6 +23,9 @@ html(lang='en')
         nav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top#mainNav
             .container
                 a.navbar-brand(href='#page-top') Guillaume Charbonnier
+                    //- img(src='assets/img/navbar-logo.png' alt='logo' class='navbar-logo' style='height: 100%;')
+                    //- img(src='assets/img/portfolio/gcbio.info.png' alt='logo' class='navbar-logo' style='height: 50px;')
+                    //- | Guillaume Charbonnier
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -87,18 +90,18 @@ html(lang='en')
                             .tab-pane.fade#technology(role='tabpanel' aria-labelledby='technology-tab')
                                 .keyword-category
                                     include includes/tags/technology.pug
-                                p Technologies are not displayed in the item tags below if multiple technologies are involved to preserve space. However, you can use them to narrow down your search.
+                                //- p Technologies are not displayed in the item tags below if multiple technologies are involved to preserve space. However, you can use them to narrow down your search.
                             .tab-pane.fade#technique(role='tabpanel' aria-labelledby='technique-tab')
                                 .keyword-category
                                     include includes/tags/technique.pug
-                                p Techniques are not displayed in the item tags below if multiple techniques are involved to preserve space. However, you can use them to narrow down your search.
+                                //- p Techniques are not displayed in the item tags below if multiple techniques are involved to preserve space. However, you can use them to narrow down your search.
                             .tab-pane.fade#analysis(role='tabpanel' aria-labelledby='analysis-tab')
                                 .keyword-category
                                     include includes/tags/analysis.pug
                             .tab-pane.fade#tool(role='tabpanel' aria-labelledby='tool-tab')
                                 .keyword-category
                                     include includes/tags/tool.pug
-                                p Tools are not displayed in the item tags below if multiple tools are involved to preserve space. However, you can use them to narrow down your search.
+                                //- p Tools are not displayed in the item tags below if multiple tools are involved to preserve space. However, you can use them to narrow down your search.
                             .tab-pane.fade#application(role='tabpanel' aria-labelledby='application-tab')
                                 .keyword-category
                                     include includes/tags/application.pug
@@ -112,11 +115,13 @@ html(lang='en')
                         button.btn.btn-outline-secondary.btn-sm.filter-mode-button(data-mode='intersection') Intersection of Keywords
                         button.btn.btn-outline-secondary.btn-sm#selectAllKeywords Select All Keywords
                         button.btn.btn-outline-secondary.btn-sm#unselectAllKeywords Unselect All Keywords
-                //- p Use the filters above to find projects matching your criteria.
+                .col-12.col-md-8.col-lg-7.mx-auto.text-center
+                    p Too many items? Use the filters above to find projects matching your criteria. Some keywords are hidden to save space but you can use them to narrow down your search.
                 // Portfolio Grid Items
                 .row
-                    include includes/portfolio/articles.pug
-                    include includes/portfolio/reports.pug
+                    //- include includes/portfolio/articles.pug
+                    //- reports item is not ready yet
+                    //- include includes/portfolio/reports.pug
                     include includes/portfolio/ATAC-Seq.pug
                     include includes/portfolio/Bionano.pug
                     include includes/portfolio/ChIP-Seq_histone_PTM.pug
@@ -148,7 +153,8 @@ html(lang='en')
 
                 // Always Displayed Message
                 .col-12.col-md-8.col-lg-7.mx-auto.text-center
-                    p No projects found matching your criteria? This may mean I haven't yet worked on that specific area or haven't updated my portfolio with relevant examples. However, I offer custom analyses, so please don't hesitate to contact me to discuss your specific needs!
+                    p No projects found matching your criteria? This may mean I haven't yet worked on that specific area or haven't updated my portfolio with relevant examples. However, I offer custom analyses, so please don't hesitate to contact me to discuss your specific needs.
+
         // About Section
         section.page-section.bg-primary.text-white.mb-0#about
             .container
@@ -160,17 +166,166 @@ html(lang='en')
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                // About Section Content
-                .row
-                    .col-lg-4.ms-auto
-                        p.lead Bioinformatician with strong interest for epigenetic regulation, personalized medicine and reproducible high-throughput approaches in high-performance computing environments.
-                    .col-lg-4.me-auto
-                        p.lead I can help you to find answers in your genomic data and support from data generation up to publishable results. Feel free to reach me below to discuss about your project.
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://www.dropbox.com/s/9qh16qmgs5nzana/CV_Guillaume_Charbonnier_en.pdf?dl=1')
-                        i.fas.fa-download.mr-2
-                        | Download my CV
+                // Nav Tabs
+                ul.nav.nav-tabs.justify-content-center.mb-4#aboutNav(role="tablist")
+                    li.nav-item
+                        a.nav-link.active#summary-tab(data-bs-toggle="tab" href="#summary" role="tab" aria-controls="summary" aria-selected="true") Summary
+                    li.nav-item
+                        a.nav-link#career-tab(data-bs-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="false") Work Experience
+                    li.nav-item
+                        a.nav-link#education-tab(data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false") Education
+                    li.nav-item
+                        a.nav-link#publications-tab(data-bs-toggle="tab" href="#publications" role="tab" aria-controls="publications" aria-selected="false") Publications
+                    li.nav-item
+                        a.nav-link#publications-tab(data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false") Skills
+                // Tab Content
+                .tab-content#aboutTabContent
+                    include includes/aboutme/summary.pug
+                    include includes/aboutme/career.pug
+                    include includes/aboutme/education.pug
+                    include includes/aboutme/publications.pug
+                    include includes/aboutme/skills.pug
+        //- section.page-section.bg-primary.text-white.mb-0#about
+        //-     .container
+        //-         // About Section Heading
+        //-         h2.page-section-heading.text-center.text-uppercase.text-white About me
+        //-         // Icon Divider
+        //-         .divider-custom.divider-light
+        //-             .divider-custom-line
+        //-             .divider-custom-icon
+        //-                 i.fas.fa-star
+        //-             .divider-custom-line
+        //-         // About Section Content
+        //-         //- .row
+        //-         //-     .col-lg-4.ms-auto
+        //-         //-         p.lead As a bioinformatician with ten years of experience, I specialize in transforming any kinds of complex biological data into actionable insights. My expertise spans genomics, transcriptomics, epigenomics, and beyond, with a strong focus on reproducible and scalable high-throughput solutions.
+        //-         //-     .col-lg-4.me-auto
+        //-         //-         p.lead I offer a wide range of services, including data preprocessing, advanced statistical analyses, multi-omics integration, and custom pipeline or development. Whether you need routine analyses or tailored support, I can assist you at every stage—from data generation to visualization and publication-ready results.
+        //-         //-     .col-lg-4.me-auto
+        //-         //-         p.lead My goal is to provide flexible, client-focused solutions that meet your unique research needs. I also offer the option to work under confidentiality agreements, ensuring your intellectual property remains protected. Let’s collaborate to turn your data into impactful discoveries and drive your research forward.
+
+        //-         //- .row
+        //-         //-     .col-lg-4.ms-auto
+        //-         //-         p.lead As a bioinformatician with ten years of experience, I specialize in transforming any kinds of complex biological data into actionable insights. My expertise spans genomics, transcriptomics, epigenomics, and beyond, with a strong focus on reproducible and scalable high-throughput solutions.
+        //-         //-     .col-lg-4.me-auto
+        //-         //-         p.lead I offer a wide range of services, including data preprocessing, advanced statistical analyses, multi-omics integration, custom pipeline development, and the creation of interactive visualization tools. Whether you need routine analyses or tailored support, I can assist you at every stage—from data generation to visualization and publication-ready results.
+        //-         //-     .col-lg-4.me-auto
+        //-         //-         p.lead My goal is to provide flexible, client-focused solutions that meet your unique research needs. I also offer the option to work under confidentiality agreements, ensuring your intellectual property remains protected. Let’s collaborate to turn your data into impactful discoveries and drive your research forward. Feel free to contact me using the form below to discuss your project.
+        //-         .row
+        //-             .col-lg-4.ms-auto
+        //-                 p.lead As a bioinformatician with over ten years of experience, I specialize in transforming complex biological data into actionable insights. My expertise spans genomics, transcriptomics, epigenomics, and beyond, with a strong focus on reproducible and scalable high-throughput solutions tailored to diverse research needs.
+        //-             .col-lg-4.me-auto
+        //-                 p.lead I offer a wide range of services, including data preprocessing, advanced statistical analyses, multi-omics integration, custom pipeline development, and the creation of interactive visualization tools. Whether you need routine analyses or tailored support, I can assist you at every stage—from data generation to visualization and publication-ready results.
+        //-             .col-lg-4.me-auto
+        //-                 p.lead I provide flexible solutions to meet your unique research needs. I also offer the option to work under confidentiality agreements, ensuring your intellectual property remains protected. Let’s collaborate to turn your data into impactful discoveries and drive your research forward. Feel free to contact me using the form below to discuss your project in detail.
+        //-             //- .col-lg-4.ms-auto
+        //-             //-     p.lead Bioinformatician with strong interest for epigenetic regulation, personalized medicine and reproducible high-throughput approaches in high-performance computing environments.
+        //-             //- .col-lg-4.me-auto
+        //-             //-     p.lead I can help you to find answers in your genomic data and support from data generation up to publishable results. Feel free to reach me below to discuss about your project.
+        //-             //- p.lead As a bioinformatician with ten years of working experience, I specialize in uncovering insights from genomic data, with a strong focus on epigenetics, personalized medicine, and scalable high-throughput solutions. Whether you need support for data generation, analysis, or achieving publishable results, I am here to collaborate and tailor solutions to your unique research needs. Let’s discuss how I can help advance your project.
+        //-         //- p.lead  As a bioinformatician with ten years of working experience, I specialize in extracting meaningful insights from any kind of complex biological data. I can provide routine analyses or tailored support from data generation to publishable results. Let’s collaborate to turn your data into impactful discoveries.
+        //-         //- .row
+        //-         //-     include includes/aboutme/career.pug
+        //-         //-     //- reports item is not ready yet
+        //-         //-     //- include includes/portfolio/reports.pug
+        //-         //-     include includes/aboutme/education.pug
+        //-         //-     include includes/aboutme/publications.pug
+        //- section.page-section.bg-primary.text-white.mb-0.aboutme#aboutmore
+        //-     .container
+        //-         // About Section Heading
+        //-         h2.page-section-heading.text-center.text-uppercase.text-white About me
+        //-         // Icon Divider
+        //-         .divider-custom.divider-light
+        //-             .divider-custom-line
+        //-             .divider-custom-icon
+        //-                 i.fas.fa-star
+        //-             .divider-custom-line
+        //-         // Nav Tabs
+        //-         ul.nav.nav-tabs.justify-content-center.mb-4#aboutNav(role="tablist")
+        //-             li.nav-item
+        //-                 a.nav-link.active#career-tab(data-bs-toggle="tab" href="#career" role="tab" aria-controls="career" aria-selected="true") Career
+        //-             li.nav-item
+        //-                 a.nav-link#education-tab(data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false") Education
+        //-             li.nav-item
+        //-                 a.nav-link#publications-tab(data-bs-toggle="tab" href="#publications" role="tab" aria-controls="publications" aria-selected="false") Publications
+        //-         // Tab Content
+        //-         .tab-content#aboutTabContent
+        //-             .tab-pane.fade.show.active#career(role="tabpanel" aria-labelledby="career-tab")
+        //-                 p Career CONTENT
+        //-                 //- include includes/aboutme/career.pug
+        //-             .tab-pane.fade#education(role="tabpanel" aria-labelledby="education-tab")
+        //-                 p Education CONTENT
+        //-                 //- include includes/aboutme/education.pug
+        //-             .tab-pane.fade#publications(role="tabpanel" aria-labelledby="publications-tab")
+        //-                 p Publications CONTENT
+        //-                 //- include includes/aboutme/publications.pug
+        //- //- section.page-section.bg-primary.text-white.mb-0#aboutmore
+        //-     .container
+        //-         // About Section Heading
+        //-         h2.page-section-heading.text-center.text-uppercase.text-white About me
+        //-         // Icon Divider
+        //-         .divider-custom.divider-light
+        //-             .divider-custom-line
+        //-             .divider-custom-icon
+        //-                 i.fas.fa-star
+        //-             .divider-custom-line
+        //-         // Nav Pills
+        //-         ul.nav.nav-pills.justify-content-center.mb-4#aboutNav(role="tablist")
+        //-             li.nav-item
+        //-                 a.nav-link.active#career-tab(data-bs-toggle="pill" href="#career" role="tab" aria-controls="career" aria-selected="true") Career
+        //-             li.nav-item
+        //-                 a.nav-link#education-tab(data-bs-toggle="pill" href="#education" role="tab" aria-controls="education" aria-selected="false") Education
+        //-             li.nav-item
+        //-                 a.nav-link#publications-tab(data-bs-toggle="pill" href="#publications" role="tab" aria-controls="publications" aria-selected="false") Publications
+        //-         // Tab Content
+        //-         .tab-content#aboutTabContent
+        //-             .tab-pane.fade.show.active#career(role="tabpanel" aria-labelledby="career-tab")
+        //-                 p Career CONTENT
+        //-                 //- include includes/aboutme/career.pug
+        //-             .tab-pane.fade#education(role="tabpanel" aria-labelledby="education-tab")
+        //-                 //- include includes/aboutme/education.pug
+        //-                 p EDUCATION CONENT
+        //-             .tab-pane.fade#publications(role="tabpanel" aria-labelledby="publications-tab")
+        //-                 p Publications CONTENT
+        //-                 //- include includes/aboutme/publications.pug
+        //-         //- // Tabs Section
+        //-         //- .row.mt-5
+        //-         //-     .col-12
+        //-         //-         // Tabs Navigation
+        //-         //-         ul.nav.nav-tabs#aboutTabs(role="tablist")
+        //-         //-             li.nav-item
+        //-         //-                 a.nav-link.active#education-tab(data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true") Education
+        //-         //-             li.nav-item
+        //-         //-                 a.nav-link#experience-tab(data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false") Professional Experience
+        //-         //-             li.nav-item
+        //-         //-                 a.nav-link#skills-tab(data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false") Skills
+        //-         //-         // Tabs Content
+        //-         //-         .tab-content#aboutTabsContent
+        //-         //-             .tab-pane.fade.show.active#education(role="tabpanel" aria-labelledby="education-tab")
+        //-         //-                 h4 Education
+        //-         //-                 ul
+        //-         //-                     li PhD in Bioinformatics, University of XYZ (Year)
+        //-         //-                     li MSc in Computational Biology, University of ABC (Year)
+        //-         //-                     li BSc in Biology, University of DEF (Year)
+        //-         //-             .tab-pane.fade#experience(role="tabpanel" aria-labelledby="experience-tab")
+        //-         //-                 h4 Professional Experience
+        //-         //-                 ul
+        //-         //-                     li Freelance Bioinformatician (Year–Present): Providing tailored bioinformatics solutions to clients worldwide.
+        //-         //-                     li Senior Bioinformatics Analyst, Company XYZ (Year–Year): Led multi-omics projects and developed scalable pipelines.
+        //-         //-                     li Research Assistant, Institute ABC (Year–Year): Conducted research on epigenetic regulation and data integration.
+        //-         //-             .tab-pane.fade#skills(role="tabpanel" aria-labelledby="skills-tab")
+        //-         //-                 h4 Skills
+        //-         //-                 ul
+        //-         //-                     li Expertise in genomics, transcriptomics, and epigenomics
+        //-         //-                     li Proficient in R, Python, and Bash scripting
+        //-         //-                     li Experience with high-performance computing and cloud platforms
+        //-         //-                     li Skilled in data visualization and interactive tool development
+        //-         // About Section Button
+        //-         // CV Not up to date yet
+        //-         //- .text-center.mt-4
+        //-         //-     a.btn.btn-xl.btn-outline-light(href='https://www.dropbox.com/s/9qh16qmgs5nzana/CV_Guillaume_Charbonnier_en.pdf?dl=1')
+        //-         //-         i.fas.fa-download.mr-2
+        //-         //-         | Download my CV
         // Contact Section
         section.page-section#contact
             .container
